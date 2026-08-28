@@ -2,13 +2,17 @@
 text-align: left;
 font-weight: bold;
 color: #5b9bd5;
-font-size: 36px;
+font-size: 20px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin: 25px;
 letter-spacing: 0.5px;
 border-left: 4px solid #8cc8f0;
 padding-left: 12px;
+padding-top: 0px;
 text-shadow: 1px 1px 3px black;
+display:block;
+margin: -80px 200px 10px;
+
 }
 
 .botao {
@@ -30,11 +34,9 @@ text-shadow: 1px 1px 3px black;
     width: 200px;
     height: 100px;
     padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block;
     text-align: center;
+    margin: 20px 1500px ;
 
 }
 
@@ -48,4 +50,22 @@ text-shadow: 1px 1px 3px black;
 .tres input:hover {
     background-color: #fff176;
     border: 2px solid #fbc02d;
+}
+
+#logo{
+    width: 150px;
+    height: 75px;
+    margin: 25px;
+    padding: 0px;
+}
+
+.meio{
+    display: flex;
+    background-color: cornflowerblue;
+}
+
+.cabeca{
+    background-color: aqua;
+    display: flex;
+    height: 150px;
 }
