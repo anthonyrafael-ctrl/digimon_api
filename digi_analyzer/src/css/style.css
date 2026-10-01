@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-image: url("/digi_analyzer/src/asserts/image.png");
+    background-size: cover;
 }
 #title { 
 text-align: left;
@@ -62,7 +63,7 @@ text-shadow: 1px 1px 3px black;
 
 .cabeca {
     width: 100%;
-    background-color: #000000;
+    background-color: #688fe2;
 }
 
 .navegacao {
@@ -121,7 +122,6 @@ text-shadow: 1px 1px 3px black;
     width: 80%;
     min-height: 700px;
     margin: 0 auto;
-    background-color: cornflowerblue;
     padding: 40px;
 }
 
@@ -145,7 +145,7 @@ text-shadow: 1px 1px 3px black;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #688fe2;
+    background-color: #688fe2 ;
 }
 
 
@@ -178,7 +178,7 @@ text-shadow: 1px 1px 3px black;
 }
 
 .botao {
-    background-color: blue;
+    background-color: #FFFFB2;
     color: gold;
     border-radius: 8px;
     border: none;
@@ -187,6 +187,7 @@ text-shadow: 1px 1px 3px black;
     font-weight: bold;
     margin: 10px;
     cursor: pointer;
+    border: 2px solid #DDD9CE
 }
 
 
@@ -255,7 +256,7 @@ text-shadow: 1px 1px 3px black;
 }
 
 .final {
-    background-color: #A8D8EA;
+    background-color: gray;
     text-align: center;
     padding: 20px;
 }
