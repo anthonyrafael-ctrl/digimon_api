@@ -6,9 +6,9 @@ font-size: 36px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin: 25px;
 letter-spacing: 0.5px;
-border-left: 4px solid #8cc8f0;
 padding-left: 12px;
 text-shadow: 1px 1px 3px black;
+
 }
 
 .botao {
@@ -35,6 +35,7 @@ text-shadow: 1px 1px 3px black;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #688fe2;
     background-color: #688fe2;
 
 }
@@ -69,7 +70,6 @@ text-shadow: 1px 1px 3px black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 40px;
 }
 
@@ -92,4 +92,168 @@ text-shadow: 1px 1px 3px black;
 
 #lista_nav a:hover {
     color: #60a5fa;
+}
+
+#logo {
+    width: 150px;
+    height: 75px;
+    margin: 25px;
+    padding: 0px;
+}
+
+#title {
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-size: 36px;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+    margin: 25px;
+    letter-spacing: 0.5px;
+    padding-left: 12px;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.meio {
+    width: 80%;
+    min-height: 700px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    padding: 40px;
+}
+
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#dois {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #688fe2;
+}
+
+
+.card {
+    min-height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: #eaf6ff;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.botao {
+    background-color: blue;
+    color: gold;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.tres {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #688fe2;
+}
+
+.tres input {
+    background-color: #fff9c4;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.tres input:hover {
+    background-color: #fff176;
+    border: 2px solid #fbc02d;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: #eaf6ff;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.final {
+    background-color: #A8D8EA;
+    text-align: center;
+    padding: 20px;
 }
