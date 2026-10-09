@@ -150,7 +150,7 @@ text-shadow: 1px 1px 3px black;
 
 
 .card {
-    min-height: 200px;
+    height: 200px;
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -159,6 +159,8 @@ text-shadow: 1px 1px 3px black;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
+    color: black;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -259,4 +261,39 @@ text-shadow: 1px 1px 3px black;
     background-color: gray;
     text-align: center;
     padding: 20px;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.paginacao button {
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    #cards {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacao { 
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+
+    #lista_nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

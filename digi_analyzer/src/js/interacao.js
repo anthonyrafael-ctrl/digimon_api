@@ -1,40 +1,33 @@
-console.log('Hey listen');
+const cards = document.getElementById("cards");
 
-galos = [
-    {'nome': 'Galo de Botas',
-        'id': '!#999'
-    }
+fetch("")
+    .then(resposta => resposta.json())
+    .then(dados => {
 
-]
+        dados.content.forEach(digimon => {
 
-let currentIdx = 0;
+            const card = document.createElement("div");
 
-function displayGalo(Galo) {
+            card.classList.add("card");
 
-    let galo = galo;
+            card.innerHTML = `
+                <img src="${digimon.image}" alt="${digimon.name}">
+                <h2>${digimon.name}</h2>
+                <p>ID: ${digimon.id}</p>
+            `;
 
-    let galoId = document.getElementById('galo-id')
-    galoId.textContent = galos ['id'];
-    galoId.style = 'Color: #FF0000'
-
-    let galoNome = document.getElementById('galo-nome')
-    galoNome.textContent = galos['nome'];
-
-    let netxButton = document.getElementById('netx-btn')
-    netxButon.addEventListener('click', () => 
-        {
-            currentIdx = Math.min(galos.length - 1, currentIdx + 1);
-            displayGalo(galos[currentIdx])
+            cards.appendChild(card);
         });
 
-    let prevButton = document.getElementById('prev-btn')
-    netxButon.addEventListener('click', () => 
-        {
-            currentIdx -= 1;
-            displayGalo(galos[currentIdx])
-        });
+    })
+    .catch(erro => {
+        console.log("Erro:", erro);
+    });
 
+document.getElementById('next-btn').addEventListener('click', function() {
+    console.log('Botão Próximo clicado');
+});
 
-}
-
-displayGalo(galos[0])
+document.getElementById('prev-btn').addEventListener('click', function() {
+    console.log('Botão Voltar clicado');
+});
