@@ -297,3 +297,22 @@ text-shadow: 1px 1px 3px black;
         justify-content: center;
     }
 }
+
+#resultado-pesquisa {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.card-resultado {
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card-resultado img {
+    width: 180px;
+    max-width: 100%;
+    object-fit: contain;
+}

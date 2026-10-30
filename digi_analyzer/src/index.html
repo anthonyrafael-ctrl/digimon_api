@@ -36,96 +36,36 @@
         </div>
 
 
-        <div class="tres">
+       <div class="tres">
 
-            <form action="">
-                Pesquisar Nome/Número
+            <form id="form-pesquisa">
+                <label for="busca-digimon">Pesquisar Nome/Número</label>
+
+                <input
+                    type="text"
+                    id="busca-digimon"
+                    placeholder="Digite o nome ou ID"
+                    required>
+
+                <button type="submit" class="botao">
+                    Pesquisar</button>
             </form>
-
-            <input type="text" placeholder="Pesquisar">
-
-            <button class="botao">
-                Pesquisar
-            </button>
 
         </div>
 
     </div>
 
+    <div id="resultado-pesquisa"></div>
 
-    <div id="cards">
 
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>1</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>2</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>3</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>4</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>5</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>6</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-           <div class="card">
-              <h2>7</h2>
-              <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>8</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-        <a href="detalhes.html">
-            <div class="card">
-                <h2>9</h2>
-                <p>Digimon</p>
-            </div>
-        </a>
-
-    </div>
+    <div id="cards"></div>
 
 <div class="paginacao">
-    <button class="botao" onclick="location.href='anterior.html'">
+    <button class="botao" id='prev-btn' onclick="location.href='anterior.html'">
         Voltar
     </button>
 
-    <button class="botao" onclick="location.href='proximo.html'">
+    <button class="botao" id='next-btn' onclick="location.href='proximo.html'">
         Próximo
     </button>
 </div>
