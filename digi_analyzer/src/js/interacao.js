@@ -38,16 +38,20 @@ const resultado = document.getElementById("resultado-pesquisa");
 
 const API = "https://digi-api.com/api/v1/digimon/";
 
+let pesquisaAtual = 0;
+
 formulario.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
-    const pesquisa = campoPesquisa.value.trim();
+    const pesquisa = campoPesquisa.value.trim().replace(/\s+/g, "").toLowerCase();
 
     if (pesquisa === "") {
         resultado.textContent = "Digite um nome ou ID.";
         return;
     }
+
+    const identificador = ++pesquisaAtual;
 
     resultado.innerHTML = "<p>Carregando Digimon...</p>";
 
@@ -63,9 +67,17 @@ formulario.addEventListener("submit", async function(event) {
 
         const dados = await resposta.json();
 
+         if (identificador !== pesquisaAtual) {
+            return;
+        }
+
         mostrarDigimon(dados);
 
     } catch (erro) {
+
+        if (identificador !== pesquisaAtual) {
+            return;
+        }
 
         resultado.innerHTML = "";
 
